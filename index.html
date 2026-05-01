@@ -213,21 +213,134 @@ body{font-family:'DM Sans',sans-serif;background:var(--d);color:var(--t);line-he
 </nav>
 </div>
 
-<!-- (rest of your HTML + JS continues exactly as in your original code) -->
+<!-- EVIDENCE -->
+<div class="scr" id="s-ev">
+<div class="sbar"><span>12:00</span><span>📶 🔋</span></div>
+<div class="hdr"><button class="hbtn" onclick="go('s-dash')">←</button><div class="logo" style="font-size:16px">Evidence Vault</div><div style="width:36px"></div></div>
+<div class="ev">
+<div class="ev-u" onclick="upF()"><div style="font-size:40px">📤</div><div style="font-size:14px;font-weight:600;margin:4px 0">Tap to Upload</div><div style="font-size:12px;color:var(--m)">Audio, video, images</div></div>
+<div class="ev-f" id="fl"></div>
+<div class="ev-ai h" id="ai"><div style="display:flex;align-items:center;gap:8px;margin-bottom:10px"><span style="font-size:20px">🤖</span><div style="font-size:13px;font-weight:700;color:#6EE7B7">AI Analysis</div><div style="margin-left:auto;padding:4px 10px;background:rgba(5,150,105,0.2);border-radius:6px;font-size:11px;font-weight:700;color:#6EE7B7" id="ais">STRONG</div></div><div style="font-size:11px;color:rgba(255,255,255,0.5);line-height:1.6" id="aid">Upload files to verify...</div></div>
+</div>
+<nav class="nav">
+<button class="ni" onclick="go('s-dash')"><span>🏠</span><span>Home</span></button>
+<button class="ni" onclick="go('s-rpt')"><span>📝</span><span>Report</span></button>
+<button class="ni" onclick="go('s-trk')"><span>🔍</span><span>Track</span></button>
+<button class="ni" onclick="go('s-sp')"><span>💬</span><span>Support</span></button>
+</nav>
+</div>
 
+<!-- TRACKING -->
+<div class="scr" id="s-trk">
+<div class="sbar"><span>12:00</span><span>📶 🔋</span></div>
+<div class="hdr"><button class="hbtn" onclick="go('s-dash')">←</button><div class="logo" style="font-size:16px">Case Tracking</div><div style="width:36px"></div></div>
+<div class="tr">
+<div id="te" style="text-align:center;padding:40px 20px;color:var(--m)"><div style="font-size:48px;margin-bottom:12px;opacity:0.5">📭</div><div style="font-size:16px;font-weight:600;color:var(--t);margin-bottom:4px">No Active Cases</div><div style="font-size:13px">Submitted reports appear here</div></div>
+<div id="tc" class="h">
+<div class="tr-c"><div style="font-size:10px;color:var(--m)">Case ID</div><div style="font-size:16px;font-weight:700;color:#C084FC;font-family:monospace" id="cid">—</div></div>
+<div class="tr-t" id="tl"></div>
+</div>
+</div>
+<nav class="nav">
+<button class="ni" onclick="go('s-dash')"><span>🏠</span><span>Home</span></button>
+<button class="ni" onclick="go('s-rpt')"><span>📝</span><span>Report</span></button>
+<button class="ni a" onclick="go('s-trk')"><span>🔍</span><span>Track</span></button>
+<button class="ni" onclick="go('s-sp')"><span>💬</span><span>Support</span></button>
+</nav>
+</div>
+
+<!-- BLACKLIST -->
+<div class="scr" id="s-bl">
+<div class="sbar"><span>12:00</span><span>📶 🔋</span></div>
+<div class="hdr"><button class="hbtn" onclick="go('s-dash')">←</button><div class="logo" style="font-size:16px">Offender Registry</div><div style="width:36px"></div></div>
+<div class="bl">
+<div class="bl-o"><div class="bl-oh"><div class="bl-oa">👤</div><div><div style="font-size:15px;font-weight:700">R. Kumar</div><div style="font-size:11px;color:var(--m)">Ex-Manager, TechCorp India</div></div></div><div style="display:flex;flex-wrap:wrap;gap:6px"><span class="bad bad-r">Sexual Harassment</span><span class="bad bad-r">3 Complaints</span><span class="bad bad-r">Verified</span></div></div>
+<div style="margin:0 20px">
+<div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--bd)"><span style="font-size:13px">Naukri.com</span><span class="bad bad-r">✕ BLOCKED</span></div>
+<div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--bd)"><span style="font-size:13px">Shine.com</span><span class="bad bad-r">✕ BLOCKED</span></div>
+<div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--bd)"><span style="font-size:13px">Indeed India</span><span class="bad bad-r">✕ BLOCKED</span></div>
+<div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--bd)"><span style="font-size:13px">LinkedIn</span><span class="bad bad-r">✕ BLOCKED</span></div>
+</div>
+<div class="card" style="margin:20px"><div style="display:flex;justify-content:space-between;margin-bottom:10px"><span style="font-size:12px;color:var(--m)">Company Safety Score</span><span style="font-size:24px;font-weight:700;color:var(--r)">3.2</span></div><div style="height:8px;background:rgba(255,255,255,0.1);border-radius:4px;overflow:hidden"><div style="width:32%;height:100%;background:var(--r);border-radius:4px"></div></div><div style="display:flex;justify-content:space-between;margin-top:8px"><span style="font-size:11px;color:var(--m)">TechCorp India</span><span style="font-size:11px;color:#F87171;font-weight:700">UNSAFE</span></div></div>
+</div>
+<nav class="nav">
+<button class="ni" onclick="go('s-dash')"><span>🏠</span><span>Home</span></button>
+<button class="ni" onclick="go('s-rpt')"><span>📝</span><span>Report</span></button>
+<button class="ni" onclick="go('s-trk')"><span>🔍</span><span>Track</span></button>
+<button class="ni" onclick="go('s-sp')"><span>💬</span><span>Support</span></button>
+</nav>
+</div>
+
+<!-- SUPPORT -->
+<div class="scr" id="s-sp">
+<div class="sbar"><span>12:00</span><span>📶 🔋</span></div>
+<div class="hdr"><button class="hbtn" onclick="go('s-dash')">←</button><div class="logo" style="font-size:16px">Support Network</div><div style="width:36px"></div></div>
+<div class="sp">
+<div class="sp-c">
+<div class="sp-m" id="cm">
+<div class="sp-b b">👋 Welcome! I'm SafeVoice AI Support. Everything here is anonymous and encrypted.</div>
+<div class="sp-b b">Ask me about: filing reports, POSH Act rights, evidence, legal help, or mental health.</div>
+</div>
+<div class="sp-i"><input type="text" class="sp-in" id="ci" placeholder="Type message..." onkeypress="if(event.key==='Enter')sendM()"><button class="sp-sd" onclick="sendM()">➤</button></div>
+</div>
+</div>
+<nav class="nav">
+<button class="ni" onclick="go('s-dash')"><span>🏠</span><span>Home</span></button>
+<button class="ni" onclick="go('s-rpt')"><span>📝</span><span>Report</span></button>
+<button class="ni" onclick="go('s-trk')"><span>🔍</span><span>Track</span></button>
+<button class="ni a" onclick="go('s-sp')"><span>💬</span><span>Support</span></button>
+</nav>
+</div>
+
+<!-- JOURNEY -->
+<div class="scr" id="s-jr">
+<div class="sbar"><span>12:00</span><span>📶 🔋</span></div>
+<div class="hdr"><button class="hbtn" onclick="go('s-dash')">←</button><div class="logo" style="font-size:16px">Safe Journey</div><div style="width:36px"></div></div>
+<div class="jr">
+<div class="jr-m"><div style="font-size:48px">🗺</div><div style="font-size:14px;color:var(--m)">GPS tracking ready</div></div>
+<div class="jr-s" id="js"><div style="font-size:14px;font-weight:600;margin-bottom:4px" id="jst">Journey Mode is OFF</div><div style="font-size:12px;color:var(--m)">Tap to start live tracking</div><button class="btn btn-p" style="margin-top:12px" id="jb" onclick="tJ()">Start Journey</button></div>
+<div class="card" style="margin:0 20px"><div style="font-size:14px;font-weight:700;margin-bottom:8px">How it works</div><div style="font-size:12px;color:var(--m);line-height:1.6">• Tracks route to/from office<br>• Alerts contacts if you deviate<br>• Auto-records audio on alert<br>• SOS if stopped >5 min</div></div>
+</div>
+<nav class="nav">
+<button class="ni" onclick="go('s-dash')"><span>🏠</span><span>Home</span></button>
+<button class="ni" onclick="go('s-rpt')"><span>📝</span><span>Report</span></button>
+<button class="ni" onclick="go('s-trk')"><span>🔍</span><span>Track</span></button>
+<button class="ni" onclick="go('s-sp')"><span>💬</span><span>Support</span></button>
+</nav>
+</div>
+
+</div>
 <script>
-/* ===== FULL ORIGINAL JAVASCRIPT (UNCHANGED) ===== */
-
 let st={user:null,cases:[],ev:[],jr:false,rs:1,os:'phone'};
 let ht='';
-
+const tl=[{t:'Report Submitted & Sealed',tm:'Mar 29, 10:14 AM',d:'Encrypted and stored',done:1},{t:'Received by HSR She Team',tm:'Mar 29, 11:02 AM',d:'Bengaluru Police',done:1},{t:'Evidence Under Review',tm:'Day 2 of 7',d:'AI analysis done',done:0,a:1},{t:'CEO Notified',tm:'Pending',d:'Anonymous escalation',done:0},{t:'Action Confirmed',tm:'Pending',d:'By you',done:0}];
+const cr={report:'Go to Dashboard → File a New Report. Encrypted, identity protected.',posh:'POSH Act (2013): 90-day resolution, no retaliation, ICC mandatory for 10+ employees.',evidence:'Screenshots with timestamps, voice recordings, emails, witness statements. AI verifies authenticity.',legal:'Police auto-generates FIR, POSH letter, affidavit. Pro-bono lawyers available.',mental:'24/7 AI counseling, peer support groups, trauma counselors (free).',hello:'Hi! I\'m SafeVoice AI. Ask about reports, rights, evidence, legal, or mental health.',help:'I can help with: filing reports, POSH rights, evidence tips, legal procedures, mental health resources.'};
 function $(i){return document.getElementById(i)}
 function go(s){document.querySelectorAll('.scr').forEach(x=>x.classList.remove('a'));$(s).classList.add('a');window.scrollTo(0,0);updN(s)}
 function updN(s){document.querySelectorAll('.ni').forEach(n=>n.classList.remove('a'));const m={'s-dash':0,'s-rpt':1,'s-trk':2,'s-sp':3};if(m[s]!==undefined)document.querySelectorAll('.nav').forEach(v=>{v.querySelectorAll('.ni').forEach((b,i)=>{if(i===m[s])b.classList.add('a')})})}
-
-/* ...keep pasting your remaining JS exactly... */
-
+function showT(m,t='s'){const e=$('toast');e.textContent=(t==='s'?'✅ ':t==='e'?'❌ ':'⚠️ ')+m;e.style.display='flex';e.style.borderColor=t==='s'?'rgba(5,150,105,0.4)':t==='e'?'rgba(225,29,72,0.4)':'rgba(217,119,6,0.4)';setTimeout(()=>e.style.display='none',3000)}
+function ld(t='Loading...'){$('loadt').textContent=t;$('load').classList.add('a')}
+function hld(){$('load').classList.remove('a')}
+setInterval(()=>{const n=new Date();const s=n.toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',hour12:false});document.querySelectorAll('.sbar span:first-child').forEach(e=>e.textContent=s)},1000);
+function doOnb(){const b=$('onbBtn'),p=$('ph').value.trim();if(st.os==='phone'){if(!p||p.length<10){showT('Enter valid number','e');return}ld('Sending OTP...');setTimeout(()=>{hld();$('sec-otp').classList.remove('h');b.textContent='Verify OTP';st.os='otp';showT('OTP sent! Use 472183')},1500)}else if(st.os==='otp'){const o=Array.from(document.querySelectorAll('.otp-b')).map(x=>x.value).join('');if(o.length!==6){showT('Enter complete OTP','e');return}ld('Verifying...');setTimeout(()=>{hld();if(o==='472183'){$('sec-id').classList.remove('h');b.textContent='Verify ID';st.os='id';showT('OTP verified!')}else showT('Invalid OTP. Try 472183','e')},1000)}else if(st.os==='id'){showT('Please upload ID','w')}else if(st.os==='org'){if(!$('org').value||!$('des').value||!$('br').value){showT('Fill all fields','e');return}ld('Creating account...');setTimeout(()=>{hld();st.user={name:'Priya S.',phone:p,org:$('org').value,des:$('des').value,br:$('br').value,ver:1};localStorage.setItem('svu',JSON.stringify(st.user));showT('Welcome to SafeVoice! 🛡');go('s-dash')},2000)}}
+document.querySelectorAll('.otp-b').forEach((b,i)=>{b.addEventListener('input',e=>{if(e.target.value){if(i<5)document.querySelectorAll('.otp-b')[i+1].focus()}});b.addEventListener('keydown',e=>{if(e.key==='Backspace'&&!e.target.value&&i>0)document.querySelectorAll('.otp-b')[i-1].focus()})});
+function doID(){$('idV').classList.remove('h');ld('Verifying via DigiLocker...');setTimeout(()=>{hld();$('idV').classList.add('h');$('sec-org').classList.remove('h');$('onbBtn').textContent='Complete';st.os='org';showT('Identity verified ✅')},3000)}
+function updD(){if(!st.user){const s=localStorage.getItem('svu');if(s)st.user=JSON.parse(s)}if(st.user){$('un').textContent=st.user.name+' 🛡';const h=new Date().getHours();$('gr').textContent=(h<12?'Good morning,':h<17?'Good afternoon,':'Good evening,')}$('n1').textContent=st.cases.length;$('n2').textContent=st.ev.length;$('n3').textContent=st.jr?'ON':'OFF'}
+function tSOS(){$('sos').classList.add('a');let c=5;$('sosT').textContent='05';const t=setInterval(()=>{c--;$('sosT').textContent=String(c).padStart(2,'0');if(c<=0){clearInterval(t);$('sosT').textContent='SENT';showT('🚨 SOS sent!','e')}},1000);window.sosT=t}
+function cSOS(){clearInterval(window.sosT);$('sos').classList.remove('a');$('sosT').textContent='05';showT('SOS cancelled')}
+function selH(e){document.querySelectorAll('#ht .bad').forEach(x=>{x.style.background='rgba(255,255,255,0.05)';x.style.borderColor='var(--bd)';x.style.color='var(--t)'});e.style.background='rgba(147,51,234,0.2)';e.style.borderColor='var(--p)';e.style.color='#C084FC';ht=e.textContent}
+function nR(s){if(s===2&&!$('an').value){showT('Enter accused name','e');return}if(s===3&&!ht){showT('Select harassment type','e');return}if(s===4&&!$('idsc').value){showT('Enter description','e');return}if(s===4){$('rv1').textContent=$('an').value+' — '+$('ar').value;$('rv2').textContent=ht;$('rv3').textContent=$('id').value+' '+$('it').value;$('rv4').textContent=$('il').value}$('r'+st.rs).classList.add('h');$('r'+s).classList.remove('h');st.rs=s;$('rs').textContent=s;document.querySelectorAll('#rstep .step-d').forEach((d,i)=>{d.classList.remove('a','d');if(i<s-1)d.classList.add('d');else if(i===s-1)d.classList.add('a')})}
+function pR(s){$('r'+st.rs).classList.add('h');$('r'+s).classList.remove('h');st.rs=s;$('rs').textContent=s;document.querySelectorAll('#rstep .step-d').forEach((d,i)=>{d.classList.remove('a','d');if(i<s-1)d.classList.add('d');else if(i===s-1)d.classList.add('a')})}
+function subR(){ld('Encrypting & submitting...');setTimeout(()=>{hld();const id='SV-'+new Date().getFullYear()+'-BLR-'+String(Math.floor(Math.random()*900)+100).padStart(3,'0');st.cases.push({id:id,n:$('an').value,t:ht,d:$('id').value,s:'submitted'});localStorage.setItem('svc',JSON.stringify(st.cases));$('an').value='';$('ar').value='';$('ao').value='';$('id').value='';$('it').value='';$('il').value='';$('idsc').value='';$('iw').value='';ht='';document.querySelectorAll('#ht .bad').forEach(x=>{x.style.background='';x.style.borderColor='';x.style.color=''});st.rs=1;$('r4').classList.add('h');$('r1').classList.remove('h');$('rs').textContent='1';document.querySelectorAll('#rstep .step-d').forEach((d,i)=>{d.classList.remove('a','d');if(i===0)d.classList.add('a')});showT('Report submitted! ID: '+id);go('s-trk')},2500)}
+const df=[{n:'voice_note.m4a',s:'2.4 MB',i:'🎵',st:1},{n:'screenshot.png',s:'890 KB',i:'📸',st:1},{n:'video.mp4',s:'18.7 MB',i:'📹',st:1}];
+function upF(){ld('Uploading...');setTimeout(()=>{hld();const f=['whatsapp.zip','email.pdf','medical.jpg','witness.doc'],sz=['1.2 MB','450 KB','3.1 MB','280 KB'],ic=['💬','📧','🏥','📝'];const x=Math.floor(Math.random()*4);st.ev.push({n:f[x],s:sz[x],i:ic[x],st:0,id:Date.now()});localStorage.setItem('sve',JSON.stringify(st.ev));upE();showT('File uploaded 🔐');setTimeout(()=>{st.ev[st.ev.length-1].st=1;localStorage.setItem('sve',JSON.stringify(st.ev));upE();showT('AI verified ✅')},2000)},1500)}
+function upE(){const l=$('fl');l.innerHTML='';[...df,...st.ev].forEach(f=>{const d=document.createElement('div');d.className='ev-fi';d.innerHTML=`<span style="font-size:20px">${f.i}</span><div style="flex:1"><div style="font-size:12px;font-weight:500">${f.n}</div><div style="font-size:10px;color:var(--m)">${f.s}</div></div><span style="font-size:16px">${f.st?'✅':'⏳'}</span>`;l.appendChild(d)});const t=df.length+st.ev.length,v=df.length+st.ev.filter(e=>e.st).length,p=t?Math.round(v/t*100):0;$('ai').classList.remove('h');$('ais').textContent=p>=80?'STRONG':p>=50?'MODERATE':'WEAK';$('ais').style.background=p>=80?'rgba(5,150,105,0.2)':p>=50?'rgba(217,119,6,0.2)':'rgba(225,29,72,0.2)';$('ais').style.color=p>=80?'#6EE7B7':p>=50?'#FCD34D':'#F87171';$('aid').innerHTML=`• ${v} of ${t} verified<br>• No manipulation detected<br>• GPS + timestamp: CONFIRMED`;updD()}
+function upT(){const h=st.cases.length>0;$('te').classList.toggle('h',h);$('tc').classList.toggle('h',!h);if(h){const c=st.cases[st.cases.length-1];$('cid').textContent=c.id;const l=$('tl');l.innerHTML='';tl.forEach((x,i)=>{const d=document.createElement('div');d.className='tr-ti';d.innerHTML=`<div class="tr-td ${x.done?'d':x.a?'a':''}">${x.done?'✓':x.a?'⋯':''}</div><div style="flex:1;padding-top:4px"><div style="font-size:13px;font-weight:600">${x.t}</div><div style="font-size:11px;color:var(--m)">${x.tm}</div>${x.d?`<div style="font-size:11px;color:rgba(255,255,255,0.5);margin-top:4px">${x.d}</div>`:''}</div>`;l.appendChild(d)})}}
+function sendM(){const i=$('ci'),t=i.value.trim();if(!t)return;const c=$('cm');const u=document.createElement('div');u.className='sp-b u';u.textContent=t;c.appendChild(u);i.value='';c.scrollTop=c.scrollHeight;const ty=document.createElement('div');ty.className='sp-b b';ty.style.display='flex';ty.style.gap='4px';ty.innerHTML='<div style="width:6px;height:6px;background:var(--m);border-radius:50%;animation:typingBounce 1.4s infinite"></div><div style="width:6px;height:6px;background:var(--m);border-radius:50%;animation:typingBounce 1.4s .2s infinite"></div><div style="width:6px;height:6px;background:var(--m);border-radius:50%;animation:typingBounce 1.4s .4s infinite"></div>';c.appendChild(ty);c.scrollTop=c.scrollHeight;setTimeout(()=>{ty.remove();const lo=t.toLowerCase();let r=cr[lo]||null;if(!r){if(lo.includes('report')||lo.includes('file'))r=cr.report;else if(lo.includes('posh')||lo.includes('right'))r=cr.posh;else if(lo.includes('evidence')||lo.includes('proof'))r=cr.evidence;else if(lo.includes('legal')||lo.includes('lawyer'))r=cr.legal;else if(lo.includes('mental')||lo.includes('stress'))r=cr.mental;else if(lo.includes('hello')||lo.includes('hi'))r=cr.hello;else if(lo.includes('help'))r=cr.help;else r="I understand. You're not alone. SafeVoice is here to protect you. Would you like to file a report, speak with a counselor, or learn about your rights?"}const b=document.createElement('div');b.className='sp-b b';b.innerHTML=r;c.appendChild(b);c.scrollTop=c.scrollHeight},1500)}
+function tJ(){st.jr=!st.jr;const b=$('jb'),c=$('js'),t=$('jst');if(st.jr){b.textContent='Stop Journey';b.className='btn btn-d';c.classList.add('a');t.textContent='🔴 Journey Active';t.style.color='#6EE7B7';showT('Journey mode ON')}else{b.textContent='Start Journey';b.className='btn btn-p';c.classList.remove('a');t.textContent='Journey Mode is OFF';t.style.color='';showT('Journey stopped')}updD()}
+function init(){const u=localStorage.getItem('svu'),c=localStorage.getItem('svc'),e=localStorage.getItem('sve');if(u){st.user=JSON.parse(u);go('s-dash')}if(c)st.cases=JSON.parse(c);if(e)st.ev=JSON.parse(e);updD();upE();upT()}
+document.addEventListener('DOMContentLoaded',init);
+let lx=0,ly=0,lz=0;if(window.DeviceMotionEvent){window.addEventListener('devicemotion',e=>{const a=e.accelerationIncludingGravity;if(!a)return;const d=Math.abs(a.x-lx)+Math.abs(a.y-ly)+Math.abs(a.z-lz);if(d>25&&st.user)tSOS();lx=a.x;ly=a.y;lz=a.z})}
 </script>
-
 </body>
 </html>
